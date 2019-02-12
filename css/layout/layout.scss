@@ -1,0 +1,135 @@
+html, body, pre, code, kbd, samp {
+    font-family: 'Press Start 2P', cursive !important;
+    font-size: 1rem;
+}
+
+nav {
+    background-color: $colors-secondary;
+
+    h1 {
+        color: $colors-light;
+    }
+}
+
+#my-nav {
+    justify-content: flex-end;
+
+    .nav-item {
+        a {
+            color: $colors-light;
+
+            :hover {
+                color: $colors-primary;
+            }
+        }
+    }
+}
+
+.layout {
+    @extend %flex-box;
+
+    .nav-left {
+        background: $colors-primary;
+        min-height: 100vh;
+
+        .nav-left-header {
+
+            border-bottom: 2px solid $colors-light;
+            padding-bottom: 1rem;
+                        
+            h5 {
+                color: $colors-light;
+                font-weight: 500;
+            }
+
+        }
+
+        .nav-left-content {
+            padding-top: 3rem;
+
+            p {
+                color: $colors-light;
+                display: block;
+                font-size: 0.8em;
+                margin-block-start: 1em;
+                margin-block-end: 1em;
+                margin-inline-start: 0px;
+                margin-inline-end: 0px;
+            }
+        }
+
+        .sub-title {
+            color: $colors-dark !important;
+            background-color: $colors-light;
+        }
+
+        img {
+            border-radius: 50%;
+            border: none;
+            padding: 3rem;
+            width: 100%;
+            height: auto;
+        }
+
+        .borda {
+            top: 2px;
+            right: 2px;
+            bottom: 2px;
+            left: 2px;
+            border-color: $colors-light;
+            border-style: solid;
+            border-width: 4px;
+            border-radius: 4px;
+        }
+
+
+
+    }
+
+    .nav-right {
+        background: $colors-contrast;
+
+        h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            // background-color: ;
+            // border-bottom: 2px solid black;
+        }
+
+        .borda {
+            top: 2px;
+            right: 2px;
+            bottom: 2px;
+            left: 2px;
+            border-color: $colors-light;
+            border-style: solid;
+            border-width: 4px;
+            border-radius: 4px;
+            // padding: 40px;
+        }
+    }
+
+    .nes-container {
+        position: relative;
+        padding: 1em; 
+    }
+
+    .nes-container.with-title > .title {
+        display: table;
+        padding: 0 1rem;
+        margin: -2rem 0 1rem;
+        font-size: 1rem;
+        background-color: $colors-light;
+        color: $colors-primary;
+        border: 2px solid $colors-light;
+
+    }
+
+    .lists {
+        padding-top: 4rem;
+        margin-left: 1rem;
+        margin-right: 5rem;
+    }
+
+
+}
